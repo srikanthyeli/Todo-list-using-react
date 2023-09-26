@@ -1,0 +1,21 @@
+/* Write your CSS here */
+
+.Todo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.head-1 {
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.btn-1 {
+  color: #ff0b37;
+  background-color: transparent;
+  border: 2px #ff0b37 solid;
+  border-radius: 10px;
+  height: 30px;
+  width: 90px;
+}

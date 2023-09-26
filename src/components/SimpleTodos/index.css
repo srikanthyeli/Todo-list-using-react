@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.bg-containe {
+  background-color: #ffc2a0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: center;
+}
+.heading {
+  color: #ffc2a0;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.list-container {
+  background-color: white;
+  background-size: cover;
+  min-height: 30vh;
+  width: 80%;
+  padding: 10px;
+}
