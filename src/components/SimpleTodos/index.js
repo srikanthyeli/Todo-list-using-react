@@ -1,6 +1,6 @@
-import TodoItem from './components/TodoItem'
-
 import {Component} from 'react'
+
+import TodoItem from '../TodoItem'
 
 import './index.css'
 
@@ -46,24 +46,27 @@ class SimpleTodos extends Component {
 
   deleteTodo = id => {
     const {todoDetailsList} = this.state
-    const filteredTodoList = todoDetails.filter(each => each.id !== id)
+    const filteredTodoList = todoDetailsList.filter(each => each.id !== id)
     this.setState({todoDetailsList: filteredTodoList})
   }
+
   render() {
     const {todoDetailsList} = this.state
 
     return (
       <div className="bg-container">
-        <h1 className="heading">Simple Todos</h1>
-        <ul className="list-container">
-          {todoDetailsList.map(eachTodo => (
-            <TodoItem
-              TodoDetails={eachTodo}
-              key={eachTodo.id}
-              deleteTodo={this.deleteTodo}
-            />
-          ))}
-        </ul>
+        <div className="todo-container">
+          <h1 className="heading">Simple Todos</h1>
+          <ul className="list-container">
+            {todoDetailsList.map(eachTodo => (
+              <TodoItem
+                TodoDetails={eachTodo}
+                key={eachTodo.id}
+                deleteTodo={this.deleteTodo}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     )
   }
